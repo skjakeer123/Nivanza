@@ -1,0 +1,89 @@
+/* =================== CIRCLE SLIDER (UPDATED) =================== */
+
+.circle-slider{
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  padding: 60px 0 30px; /* more vertical breathing space */
+  scrollbar-width: none;
+}
+.circle-slider::-webkit-scrollbar{ display:none; }
+
+.circle-track{
+  display:flex;
+  align-items:center;
+  justify-content:center; /* center entire row on desktop */
+  gap: 3vw; /* bigger elegant spacing */
+  padding: 0 clamp(40px, 6vw, 120px);
+}
+
+/* Circle Card Base */
+.circle-card{
+  flex: 0 0 auto;
+  text-align:center;
+  text-decoration:none;
+  color: inherit;
+  transition: transform .35s ease, opacity .35s ease;
+}
+
+/* Desktop Circle Size — larger & responsive */
+.circle-card img{
+  width: clamp(180px, 12vw, 260px);
+  height: clamp(180px, 12vw, 260px);
+  border-radius: 50%;
+  object-fit: cover;
+  display:block;
+  transition: transform .35s ease, filter .35s ease;
+}
+
+/* Desktop Label — larger & refined */
+.circle-card span{
+  display:block;
+  margin-top: 18px;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: clamp(18px, 1.5vw, 28px);
+  letter-spacing: 0.5px;
+  color:#111;
+}
+
+/* Desktop hover polish */
+@media (hover:hover){
+  .circle-slider:hover .circle-card{ opacity:.45; transform:scale(.9); }
+  .circle-slider:hover .circle-card:hover{
+    opacity:1;
+    transform:scale(1.18);
+  }
+  .circle-slider:hover .circle-card:hover img{
+    filter:brightness(1.08) contrast(1.1);
+  }
+  .circle-slider:hover .circle-card:hover span{
+    transform:scale(1.1);
+    font-weight:500;
+  }
+}
+
+/* MOBILE MODE — smaller & scrollable */
+@media (max-width: 900px){
+  .circle-track{
+    justify-content:flex-start;
+    gap: 12px;
+    padding-inline: 20px;
+  }
+  .circle-card img{
+    width: 110px;
+    height: 110px;
+  }
+  .circle-card span{
+    font-size:14px;
+    margin-top:8px;
+  }
+}
+
+/* EXTRA SMALL */
+@media (max-width: 480px){
+  .circle-card img{ width:95px; height:95px; }
+  .circle-card span{ font-size:13px; }
+}
