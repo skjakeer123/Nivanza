@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nivanza — Home</title>
+
+  <!-- Shared theme (navbar/fonts) -->
+  <link rel="stylesheet" href="assets/css/services.css">
+  <link rel="stylesheet" href="assets/css/CircleCardsSlider.css">
+  <!-- Home-only styles -->
+  <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+
+<header class="smg-header" data-js="smg-header">
+  <div class="smg-wrap">
+    <a class="smg-logo" href="index.html" aria-label="Nivanza">
+      <img src="assets/images/Nivanza-Logo.png" alt="Nivanza Logo">
+    </a>
+
+    <nav class="smg-nav" aria-label="Primary">
+      <button class="smg-nav-toggle" aria-expanded="false" aria-controls="smg-menu">
+        <span class="sr-only">Toggle menu</span>
+        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <ul id="smg-menu" class="smg-menu" data-js="menu">
+        <li><a href="index.html" aria-current="page">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== HERO SLIDER ===== -->
+<section class="home-hero" aria-label="Featured">
+  <div class="over-hero-sentinel" aria-hidden="true"></div>
+
+  <div class="slider" data-js="slider" role="region" aria-label="Homepage slider">
+
+    <!-- Slide 1 -->
+    <article class="slide is-active" aria-roledescription="slide" aria-label="1 of 3">
+      <picture class="slide__bg">
+        <img src="assets/images/home/slide1.jpg" alt="" loading="eager" fetchpriority="high">
+      </picture>
+      <div class="slide__shade" aria-hidden="true"></div>
+      <div class="slide__content">
+        <span class="hero-pill">Creating Beauty in Every Detail</span>
+        <h1 class="slide__title">Designing Homes, That Tell Your Story</h1>
+        <p class="slide__lead">
+          From concept to completion, we blend timeless style with everyday comfort—spaces that reflect who you are.
+        </p>
+        <a href="contactus.html" class="hero-cta hero-cta--sm">Start Your Project</a>
+      </div>
+    </article>
+
+    <!-- Slide 2 -->
+    <article class="slide" aria-roledescription="slide" aria-label="2 of 3">
+      <picture class="slide__bg">
+        <img src="assets/images/home/slide2.jpg" alt="">
+      </picture>
+      <div class="slide__shade" aria-hidden="true"></div>
+      <div class="slide__content">
+        <span class="hero-pill">Relaxed but Elevated</span>
+        <h2 class="slide__title">A Collected Home, Layered Over Time</h2>
+        <p class="slide__lead">Natural textures, warm neutrals, and thoughtful details—crafted for real life.</p>
+        <a href="portfolio.html" class="hero-cta hero-cta--sm">View Portfolio</a>
+      </div>
+    </article>
+
+    <!-- Slide 3 -->
+    <article class="slide" aria-roledescription="slide" aria-label="3 of 3">
+      <picture class="slide__bg">
+        <img src="assets/images/home/slide3.jpg" alt="">
+      </picture>
+      <div class="slide__shade" aria-hidden="true"></div>
+      <div class="slide__content">
+        <span class="hero-pill">Full-Service & Virtual</span>
+        <h2 class="slide__title">Design Services for Every Stage</h2>
+        <p class="slide__lead">From renovations to styling, we tailor the process to your timeline and goals.</p>
+        <a href="services.html" class="hero-cta hero-cta--tight">Explore Services</a>
+      </div>
+    </article>
+
+    <!-- Bottom-right controls: prev • dots • next -->
+    <div class="slider-controls">
+      <button class="nav nav--prev" data-js="prev" aria-label="Previous slide"></button>
+      <div class="dots" data-js="dots" role="tablist" aria-label="Slide dots"></div>
+      <button class="nav nav--next" data-js="next" aria-label="Next slide"></button>
+    </div>
+
+  </div>
+</section>
+
+<!-- =================== CIRCLE SLIDER =================== -->
+<section class="circle-slider" id="circleSlider" aria-label="Quick links">
+  <div class="circle-track">
+    <a class="circle-card" href="/portfolio">
+      <img src="assets/images/portfolio.jpg" alt="Portfolio">
+      <span>Portfolio</span>
+    </a>
+
+    <a class="circle-card" href="/design-services">
+      <img src="assets/images/blog.jpeg" alt="Design Services">
+      <span>Design Services</span>
+    </a>
+
+    <a class="circle-card" href="/style-quiz" target="_blank" rel="noopener">
+      <img src="assets/images/style-quiz.jpg" alt="Style Quiz">
+      <span>Style Quiz</span>
+    </a>
+
+    <a class="circle-card" href="/budget-calculator">
+      <img src="assets/images/blog.jpeg" alt="Budget Calculator">
+      <span>Budget Calculator</span>
+    </a>
+
+    <a class="circle-card" href="/blog">
+      <img src="assets/images/blog.jpeg" alt="Blog">
+      <span>Blog</span>
+    </a>
+
+    <a class="circle-card" href="/shop">
+      <img src="assets/images/shop.jpeg" alt="Shop">
+      <span>Shop</span>
+    </a>
+  </div>
+</section>
+
+
+<section class="nvz-services">
+    <div class="nvz-topbar">
+      <div class="nvz-left-wrap">
+      <button class="nvz-pill-left" type="button">
+        <span class="nvz-pill-dot"></span>
+        Our Services
+      </button>
+  
+      <div class="nvz-lines">
+        <span class="nvz-line-h"></span>
+        <span class="nvz-line-v"></span>
+      </div>
+    </div>
+  
+      <div class="nvz-top-center">
+        <h1 class="nvz-title">
+          End-to-End <span class="nvz-title-accent">Interior Design</span> Solutions
+        </h1>
+        <p class="nvz-sub">
+          At Nivanza, we believe that design is deeply personal. Every home we craft begins with understanding
+          your lifestyle and aspirations. Our expert team curates a seamless experience that blends form,
+          function, and feeling from the first sketch to the final reveal.
+        </p>
+      </div>
+  
+      <div class="nvz-top-right">
+        <button class="nvz-pill nvz-pill--cta" type="button">
+          <span class="nvz-pill__label">Our Services</span>
+          <span class="nvz-pill__action" aria-hidden="true">
+            <svg viewBox="0 0 24 24" class="nvz-pill__arrow">
+              <path d="M8 12h8m0 0-3-3m3 3-3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+        </button>
+        </div>
+      </div>
+
+  <!-- Cards -->
+  <div class="nvz-grid">
+    <!-- Card 1 -->
+    <article class="nvz-card">
+      <header class="nvz-card-head">
+        <h3 class="nvz-card-title">
+          Interior<br/>Styling &<br/>Decor
+        </h3>
+        <span class="nvz-card-icon">
+          <!-- house icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 3 2.5 11.2a1 1 0 0 0 .7 1.8H5v7a1 1 0 0 0 1 1h4v-5h4v5h4a1 1 0 0 0 1-1v-7h1.8a1 1 0 0 0 .7-1.8L12 3z" />
+          </svg>
+        </span>
+      </header>
+      <hr style="margin-top: 50px;">
+      <p class="nvz-card-body">
+        From spatial planning to soft furnishings, our styling services create beautifully layered spaces that feel
+        complete.We bring in bespoke furniture, curated artwork, and textures that express your individuality while
+        maintaining harmony throughout your home.
+      </p>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="nvz-card">
+      <header class="nvz-card-head">
+        <h3 class="nvz-card-title">
+          Eco-<br/>Friendly<br/>Interiors
+        </h3>
+        <span class="nvz-card-icon">
+          <!-- sustainability dots/leaves icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm0 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM14 6c3-2.5 6-2 8-2-1 2-1.5 5-5 7-2 1-4 1-4 1s0-3 1-6zM14 16c3-2.5 6-2 8-2-1 2-1.5 5-5 7-2 1-4 1-4 1s0-3 1-6z"/>
+          </svg>
+        </span>
+      </header>
+      <hr style="margin-top: 50px;">
+      <p class="nvz-card-body">
+        Sustainability is the heart of our modern approach. We design using eco-conscious materials, responsibly
+        sourced woods, and low-emission paints to minimize environmental impact. Our interiors are designed to age
+        gracefully, integrating natural textures, local craftsmanship, and biophilic elements.
+      </p>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="nvz-card">
+      <header class="nvz-card-head">
+        <h3 class="nvz-card-title">
+          Smart<br/>Home<br/>Integration
+        </h3>
+        <span class="nvz-card-icon">
+          <!-- column / building icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 9h18v2H3V9zm2 3h2v7H5v-7zm4 0h2v7H9v-7zm4 0h2v7h-2v-7zm4 0h2v7h-2v-7zM4 7l8-4 8 4H4z"/>
+          </svg>
+        </span>
+      </header>
+      <hr style="margin-top: 50px;">
+      <p class="nvz-card-body">
+        Technology should simplify life, not complicate it. We seamlessly weave smart systems from lighting and air
+        control to security and entertainment into your interiors. Every function is intuitive and elegantly integrated,
+        ensuring your home feels effortlessly modern.
+      </p>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="nvz-card">
+      <header class="nvz-card-head">
+        <h3 class="nvz-card-title">
+          Lighting<br/>Design
+        </h3>
+        <span class="nvz-card-icon">
+          <!-- spark/lighting icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M11 2l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5zm8 8l1 3 3 1-3 1-1 3-1-3-3-1 3-1 1-3z"/>
+          </svg>
+        </span>
+      </header>
+      <hr style="margin-top: 50px;">
+      <p class="nvz-card-body">
+        Lighting transforms mood, space, and perception. Our lighting experts craft customized plans that blend ambient,
+        task, and accent lighting to elevate your interiors. From sculptural pendants to concealed strip lights, every
+        fixture is chosen to complement textures and highlight architecture.
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- WATCH - THE LATEST -->
+<section class="watch-block" aria-labelledby="watch-heading">
+  <div class="watch-wrap">
+    <header class="watch-head">
+      <div class="watch-head-titles">
+        <h2 id="watch-heading">Watch</h2>
+        <p class="watch-sub">The Latest</p>
+      </div>
+      <a class="watch-viewall" href="videos.html" aria-label="View all videos">View All</a>
+    </header>
+
+    <!-- Track: shows two big cards and a hint of the next one -->
+    <div class="watch-track" role="list">
+      <!-- Card 1 -->
+      <article class="watch-card" role="listitem">
+        <a href="post-video-1.html" class="watch-card__link">
+          <div class="watch-thumb">
+            <img src="assets/images/home/slide1.jpg" alt="Top Ten Bathrooms – from the Nivanza Portfolio">
+            <span class="watch-play" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="64" height="64">
+                <circle cx="32" cy="32" r="28" fill="rgba(255,255,255,.18)" stroke="#fff" stroke-width="2"/>
+                <polygon points="27,22 27,42 44,32" fill="#fff"/>
+              </svg>
+            </span>
+          </div>
+          <div class="watch-meta">
+            <div class="watch-eyebrow">
+              <span class="date">19 August</span> — <span class="cats">Watch, Project Tours</span>
+            </div>
+            <h3 class="watch-title">Nivanza’s Top Ten Bathrooms | From the Nivanza Portfolio</h3>
+            <p class="watch-excerpt">
+              Follow along for a curated selection of serene retreats, bold statements,
+              and timeless details that showcase our New Heritage aesthetic.
+            </p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="watch-card" role="listitem">
+        <a href="post-video-2.html" class="watch-card__link">
+          <div class="watch-thumb">
+            <img src="assets/images/home/slide2.jpg" alt="Two Living Room Looks, Styled by Nivanza">
+            <span class="watch-play" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="64" height="64">
+                <circle cx="32" cy="32" r="28" fill="rgba(255,255,255,.18)" stroke="#fff" stroke-width="2"/>
+                <polygon points="27,22 27,42 44,32" fill="#fff"/>
+              </svg>
+            </span>
+          </div>
+          <div class="watch-meta">
+            <div class="watch-eyebrow">
+              <span class="date">05 August</span> — <span class="cats">Watch</span>
+            </div>
+            <h3 class="watch-title">The Fall Collection | Two Living Room Looks, Styled by Nivanza</h3>
+            <p class="watch-excerpt">
+              Follow along as Nivanza transforms one living room using pieces
+              from the new Nivanza Co. Fall Collection.
+            </p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 3 (will appear partially on desktop) -->
+      <article class="watch-card" role="listitem">
+        <a href="post-video-3.html" class="watch-card__link">
+          <div class="watch-thumb">
+            <img src="assets/images/home/slide3.jpg" alt="Well-Lived Spaces">
+            <span class="watch-play" aria-hidden="true">
+              <svg viewBox="0 0 64 64" width="64" height="64">
+                <circle cx="32" cy="32" r="28" fill="rgba(255,255,255,.18)" stroke="#fff" stroke-width="2"/>
+                <polygon points="27,22 27,42 44,32" fill="#fff"/>
+              </svg>
+            </span>
+          </div>
+          <div class="watch-meta">
+            <div class="watch-eyebrow">
+              <span class="date">12 June</span> — <span class="cats">Watch</span>
+            </div>
+            <h3 class="watch-title">Well-Lived Homes, Well-Loved Stories</h3>
+            <p class="watch-excerpt">
+              Timeless textures with collected layers, curated for real life.
+            </p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PORTFOLIO ==================== -->
+<section class="portfolio-block" aria-labelledby="portfolio-heading">
+  <div class="portfolio-wrap">
+
+    <header class="portfolio-head">
+      <div class="portfolio-head-left">
+        <h2 id="portfolio-heading">Portfolio</h2>
+        <p class="portfolio-sub">Our Design Projects</p>
+      </div>
+      <a class="portfolio-viewall" href="portfolio.html">View All</a>
+    </header>
+
+
+    <div class="portfolio-grid" role="list">
+      <!-- Card 1 -->
+      <article class="portfolio-card" role="listitem">
+        <a class="portfolio-link" href="project-sancia.html">
+          <div class="portfolio-thumb">
+            <img src="assets/images/home/slide1.jpg" alt="Sancia bathroom design">
+          </div>
+          <div class="portfolio-meta">
+            <h3 class="portfolio-title">Sancia</h3>
+            <p class="portfolio-subtitle">
+              A masterful blend of modern and traditional.
+            </p>
+            <p class="portfolio-loc">Hyderabad</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="portfolio-card" role="listitem">
+        <a class="portfolio-link" href="project-villa.html">
+          <div class="portfolio-thumb">
+            <img src="assets/images/home/slide2.jpg" alt="Villa indoor/outdoor living">
+          </div>
+          <div class="portfolio-meta">
+            <h3 class="portfolio-title">Villa</h3>
+            <p class="portfolio-subtitle">
+              Elevated indoor/outdoor living
+            </p>
+            <p class="portfolio-loc">Hyderabad</p>
+          </div>
+        </a>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="portfolio-card" role="listitem">
+        <a class="portfolio-link" href="project-raaga.html">
+          <div class="portfolio-thumb">
+            <img src="assets/images/home/slide3.jpg" alt="The Raaga kitchen and living">
+          </div>
+          <div class="portfolio-meta">
+            <h3 class="portfolio-title">The Raaga</h3>
+            <p class="portfolio-subtitle">
+              A modern home with a fun personality.
+            </p>
+            <p class="portfolio-loc">Hyderabad</p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SPACE HERE ==================== -->
+<!-- <section class="watch-section"></section> -->
+
+<!-- ==================== DESIGN STUDIO – VIDEO HERO ==================== -->
+<section class="studio-hero" aria-labelledby="studio-hero-title">
+  <div class="studio-hero__media">
+    <!-- Replace the sources with your files -->
+    <video class="studio-hero__video" autoplay muted loop playsinline
+           poster="assets/videos/studio/poster.jpg">
+      <source src="https://player.vimeo.com/progressive_redirect/playback/1086204832/rendition/720p/file.mp4?loc=external&#038;oauth2_token_id=1750090131&#038;signature=ce0de5f9f8c739a8b5773786fa36b1639b23b866e6043d8a21eb0fbfd97b1ec0" type="video/mp4">
+      <img src="assets/videos/studio/poster.jpg" alt="">
+    </video>
+    <div class="studio-hero__shade" aria-hidden="true"></div>
+  </div>
+
+  <div class="studio-hero__content">
+    <p id="studio-hero-title" class="studio-hero__eyebrow">The Design Studio</p>
+
+    <h2 class="studio-hero__lede">
+      Nivanza is a multidisciplinary interior design firm led by Dr. Esther Priyanka.
+      Renowned for their signature aesthetic—New Heritage—the firm creates beautifully
+      balanced spaces that blend timeless elegance with modern sensibilities.
+    </h2>
+
+    <a href="services.html" class="hero-cta hero-cta--sm">
+      Explore Design Services
+    </a>
+  </div>
+</section>
+
+<!-- ==================== SPACE HERE ==================== -->
+<!-- <section class="watch-section"></section> -->
+
+<footer class="nvz-footer">
+  <div class="nvz-footer__inner">
+    <!-- Column 1: Intro + CTA -->
+    <section class="nvz-foot-intro">
+      <h3 class="nvz-foot-h">Start Your Journey with Us</h3>
+      <p class="nvz-foot-p">
+        Every beautiful home begins with a conversation. Whether you’re building from the ground up or 
+        refreshing a lived-in space, our designers are here to listen, collaborate, and create. 
+        Let’s turn your vision into a timeless interior that feels unmistakably yours.
+      </p>
+      <button class="nvz-cta" type="button">
+        <span class="nvz-cta__label">Contact Us</span>
+        <span class="nvz-cta__circle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="nvz-cta__arrow">
+            <path d="M8 12h8m0 0-3-3m3 3-3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </button>
+    </section>
+    <!-- Column 2: About -->
+    <nav class="nvz-foot-links" aria-labelledby="foot-about">
+      <h4 id="foot-about" class="nvz-foot-h">About</h4>
+      <ul>
+        <li><a href="index.html"><span class="chev">▸</span> Home</a></li>
+        <li><a href="about.html"><span class="chev">▸</span> About Us</a></li>
+        <li><a href="services.html"><span class="chev">▸</span> Services</a></li>
+        <li><a href="blog.html"><span class="chev">▸</span> Blog</a></li>
+        <li><a href="contactus.html"><span class="chev">▸</span> Contact Us</a></li>
+      </ul>
+    </nav>
+    <!-- Column 3: Information -->
+    <nav class="nvz-foot-links" aria-labelledby="foot-info">
+      <h4 id="foot-info" class="nvz-foot-h">Information</h4>
+      <ul>
+        <li><a href="#"><span class="chev">▸</span> Our Projects</a></li>
+        <li><a href="#"><span class="chev">▸</span> Partners</a></li>
+        <li><a href="#"><span class="chev">▸</span> Partners Program</a></li>
+        <li><a href="#"><span class="chev">▸</span> Affiliate Program</a></li>
+        <li><a href="#"><span class="chev">▸</span> Terms &amp; Conditions</a></li>
+        <li><a href="#"><span class="chev">▸</span> Support Center</a></li>
+      </ul>
+    </nav>
+    <!-- Column 4: Contact -->
+    <section class="nvz-foot-contact">
+      <h4 class="nvz-foot-h">Get in Touch</h4>
+      <a href="tel:+918722899999" class="nvz-phone">(+91) 87228 99999</a>
+      <span class="nvz-phone-underline" aria-hidden="true"></span>
+      <a href="mailto:contactus@nivanza.com" class="nvz-email">contactus@nivanza.com</a>
+      <div class="nvz-social">
+        <!-- Facebook -->
+        <a href="#" aria-label="Facebook" class="nvz-social__btn">
+          <svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H9v3h2v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1Z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="#" aria-label="Instagram" class="nvz-social__btn">
+          <svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2.5A2.5 2.5 0 1 1 9.5 13 2.5 2.5 0 0 1 12 10.5zm5.5-2.8a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4z"/></svg>
+        </a>
+        <!-- YouTube -->
+        <a href="#" aria-label="YouTube" class="nvz-social__btn">
+          <svg viewBox="0 0 24 24"><path d="M22 12s0-3.6-.5-5.3c-.3-1-1.1-1.7-2.1-2C17.8 4 12 4 12 4s-5.8 0-7.4.7c-1 .3-1.8 1-2.1 2C2 8.4 2 12 2 12s0 3.6.5 5.3c.3 1 1.1 1.7 2.1 2C6.2 20 12 20 12 20s5.8 0 7.4-.7c1-.3 1.8-1 2.1-2 .5-1.7.5-5.3.5-5.3zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+        </a>
+        <!-- X / Twitter -->
+        <a href="#" aria-label="X" class="nvz-social__btn">
+          <svg viewBox="0 0 24 24"><path d="M4 4h3l5 7 5-7h3l-6.5 9L20 20h-3l-4-5.5L8 20H5l7-10L7 4z"/></svg>
+        </a>
+      </div>
+    </section>
+  </div>
+</footer>
+
+
+<script src="assets/js/navbar.js" defer></script>
+<script src="assets/js/home.js" defer></script>
+</body>
+</html>

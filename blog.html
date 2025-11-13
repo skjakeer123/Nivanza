@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog | Nivanza</title>
+
+  <!-- Reuse your header/nav styles (from Services) -->
+  <link rel="stylesheet" href="assets/css/services.css">
+  <!-- Blog-specific styles -->
+  <link rel="stylesheet" href="assets/css/blog.css">
+</head>
+<body>
+
+<header class="smg-header" data-js="smg-header">
+  <div class="smg-wrap">
+    <!-- Left: Logo -->
+    <a class="smg-logo" href="index.html" aria-label="Nivanza">
+      <img src="assets/images/Nivanza-Logo.png" alt="Nivanza Logo">
+    </a>
+
+    <!-- Center: Primary Nav -->
+    <nav class="smg-nav" aria-label="Primary">
+      <button class="smg-nav-toggle" aria-expanded="false" aria-controls="smg-menu">
+        <span class="sr-only">Toggle menu</span>
+        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <ul id="smg-menu" class="smg-menu" data-js="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="blog.html" aria-current="page">BLOG</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div id="smg-search-panel" class="smg-search-panel" hidden>
+    <form role="search" class="smg-search-form" action="/search" method="get">
+      <label class="sr-only" for="q">Search</label>
+      <input id="q" name="q" type="search" placeholder="Search…" autocomplete="off" inputmode="search">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+<!-- BLOG HERO -->
+<section class="page-hero blog-hero">
+  <div class="over-hero-sentinel" aria-hidden="true"></div>
+  <picture class="page-hero__bg">
+    <img src="assets/images/aboutus/image.jpg" alt="Blog Hero Image" loading="eager" fetchpriority="high">
+  </picture>
+  <div class="page-hero__shade" aria-hidden="true"></div>
+  <div class="page-hero__content">
+    <h1 class="page-hero__title">Blog</h1>
+    <p class="page-hero__lead">
+      Ideas, projects, and stories from the studio — design notes, insider tips, and behind-the-scenes.
+    </p>
+  </div>
+</section>
+
+<!-- Placeholder next section so page scrolls -->
+<main class="blog-main">
+  <section class="blog-posts">
+  <article class="blog-post">
+    <picture class="blog-post__img">
+      <img src="assets/images/blog/Full Services.jpg" alt="">
+    </picture>
+    <div class="blog-post__content">
+      <h2 class="blog-post__title">Creating Spaces That Feel Like Home</h2>
+      <p class="blog-post__excerpt">
+        A thoughtful design approach begins with understanding how you live, move, and feel in your space.
+        We explore the little details that make a home feel personal and warm.
+      </p>
+      <a href="blog-post.html" class="blog-post__link">Read More →</a>
+    </div>
+  </article>
+
+  <article class="blog-post blog-post--reverse">
+    <picture class="blog-post__img">
+      <img src="assets/images/blog/Component Services.jpg" alt="">
+    </picture>
+    <div class="blog-post__content">
+      <h2 class="blog-post__title">The Art of Layered Textures</h2>
+      <p class="blog-post__excerpt">
+        Combining natural materials, cozy textiles, and subtle color variation builds depth,
+        softness, and timeless character into every room.
+      </p>
+      <a href="blog-post.html" class="blog-post__link">Read More →</a>
+    </div>
+  </article>
+
+  <article class="blog-post">
+    <picture class="blog-post__img">
+      <img src="assets/images/blog/Full Services.jpg" alt="">
+    </picture>
+    <div class="blog-post__content">
+      <h2 class="blog-post__title">Curating Objects With Meaning</h2>
+      <p class="blog-post__excerpt">
+        Meaningful objects — whether inherited, handcrafted, or discovered — create stories that
+        evolve with your home and express your personal history.
+      </p>
+      <a href="blog-post.html" class="blog-post__link">Read More →</a>
+    </div>
+  </article>
+
+  <article class="blog-post blog-post--reverse">
+    <picture class="blog-post__img">
+      <img src="assets/images/blog/Component Services.jpg" alt="">
+    </picture>
+    <div class="blog-post__content">
+      <h2 class="blog-post__title">A Balanced Approach to Color</h2>
+      <p class="blog-post__excerpt">
+        Gentle neutrals layered with rich natural tones bring calmness and warmth,
+        creating a space that feels both relaxed and refined.
+      </p>
+      <a href="blog-post.html" class="blog-post__link">Read More →</a>
+    </div>
+  </article>
+</section>
+</main>
+
+<footer class="nvz-footer">
+  <div class="nvz-footer__inner">
+    <!-- Column 1: Intro + CTA -->
+    <section class="nvz-foot-intro">
+      <h3 class="nvz-foot-h">Start Your Journey with Us</h3>
+      <p class="nvz-foot-p">
+        Every beautiful home begins with a conversation. Whether you’re building from the ground up or 
+        refreshing a lived-in space, our designers are here to listen, collaborate, and create. 
+        Let’s turn your vision into a timeless interior that feels unmistakably yours.
+      </p>
+      <button class="nvz-cta" type="button">
+        <span class="nvz-cta__label">Contact Us</span>
+        <span class="nvz-cta__circle" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="nvz-cta__arrow">
+            <path d="M8 12h8m0 0-3-3m3 3-3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </button>
+    </section>
+    <!-- Column 2: About -->
+    <nav class="nvz-foot-links" aria-labelledby="foot-about">
+      <h4 id="foot-about" class="nvz-foot-h">About</h4>
+      <ul>
+        <li><a href="index.html"><span class="chev">▸</span> Home</a></li>
+        <li><a href="about.html"><span class="chev">▸</span> About Us</a></li>
+        <li><a href="services.html"><span class="chev">▸</span> Services</a></li>
+        <li><a href="blog.html"><span class="chev">▸</span> Blog</a></li>
+        <li><a href="contactus.html"><span class="chev">▸</span> Contact Us</a></li>
+      </ul>
+    </nav>
+    <!-- Column 3: Information -->
+    <nav class="nvz-foot-links" aria-labelledby="foot-info">
+      <h4 id="foot-info" class="nvz-foot-h">Information</h4>
+      <ul>
+        <li><a href="#"><span class="chev">▸</span> Our Projects</a></li>
+        <li><a href="#"><span class="chev">▸</span> Partners</a></li>
+        <li><a href="#"><span class="chev">▸</span> Partners Program</a></li>
+        <li><a href="#"><span class="chev">▸</span> Affiliate Program</a></li>
+        <li><a href="#"><span class="chev">▸</span> Terms &amp; Conditions</a></li>
+        <li><a href="#"><span class="chev">▸</span> Support Center</a></li>
+      </ul>
+    </nav>
+    <!-- Column 4: Contact -->
+    <section class="nvz-foot-contact">
+      <h4 class="nvz-foot-h">Get in Touch</h4>
+      <a href="tel:+918722899999" class="nvz-phone">(+91) 87228 99999</a>
+      <span class="nvz-phone-underline" aria-hidden="true"></span>
+      <a href="mailto:contactus@nivanza.com" class="nvz-email">contactus@nivanza.com</a>
+      <div class="nvz-social">
+        <!-- Facebook -->
+        <a href="#" aria-label="Facebook" class="nvz-social__btn">
+          <svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-2 0-3 1-3 3v2H9v3h2v7h3v-7h3l1-3h-4V9c0-.6.4-1 1-1Z"/></svg>
+        </a>
+        <!-- Instagram -->
+        <a href="#" aria-label="Instagram" class="nvz-social__btn">
+          <svg viewBox="0 0 24 24"><path d="M7 3h10a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V7a4 4 0 0 1 4-4zm5 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2.5A2.5 2.5 0 1 1 9.5 13 2.5 2.5 0 0 1 12 10.5zm5.5-2.8a1.2 1.2 0 1 0 0-2.4 1.2 1.2 0 0 0 0 2.4z"/></svg>
+        </a>
+        <!-- YouTube -->
+        <a href="#" aria-label="YouTube" class="nvz-social__btn">
+          <svg viewBox="0 0 24 24"><path d="M22 12s0-3.6-.5-5.3c-.3-1-1.1-1.7-2.1-2C17.8 4 12 4 12 4s-5.8 0-7.4.7c-1 .3-1.8 1-2.1 2C2 8.4 2 12 2 12s0 3.6.5 5.3c.3 1 1.1 1.7 2.1 2C6.2 20 12 20 12 20s5.8 0 7.4-.7c1-.3 1.8-1 2.1-2 .5-1.7.5-5.3.5-5.3zM10 15.5v-7l6 3.5-6 3.5z"/></svg>
+        </a>
+        <!-- X / Twitter -->
+        <a href="#" aria-label="X" class="nvz-social__btn">
+          <svg viewBox="0 0 24 24"><path d="M4 4h3l5 7 5-7h3l-6.5 9L20 20h-3l-4-5.5L8 20H5l7-10L7 4z"/></svg>
+        </a>
+      </div>
+    </section>
+  </div>
+</footer>
+
+
+<script src="assets/js/navbar.js" defer></script>
+</body>
+</html>

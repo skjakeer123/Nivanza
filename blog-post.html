@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog • Post Title | Nivanza</title>
+
+  <link rel="stylesheet" href="assets/css/services.css">
+  <link rel="stylesheet" href="assets/css/post.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR (same as other pages) ===== -->
+<header class="smg-header" data-js="smg-header">
+  <div class="smg-wrap">
+    <!-- Left: Logo -->
+    <a class="smg-logo" href="index.html" aria-label="Nivanza">
+      <img src="assets/images/Nivanza-Logo.png" alt="Nivanza Logo">
+    </a>
+
+    <!-- Center: Primary Nav -->
+    <nav class="smg-nav" aria-label="Primary">
+      <button class="smg-nav-toggle" aria-expanded="false" aria-controls="smg-menu">
+        <span class="sr-only">Toggle menu</span>
+        <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <ul id="smg-menu" class="smg-menu" data-js="menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="services.html">SERVICES</a></li>
+        <li><a href="blog.html" aria-current="page">BLOG</a></li>
+        <li><a href="contactus.html">CONTACT US</a></li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div id="smg-search-panel" class="smg-search-panel" hidden>
+    <form role="search" class="smg-search-form" action="/search" method="get">
+      <label class="sr-only" for="q">Search</label>
+      <input id="q" name="q" type="search" placeholder="Search…" autocomplete="off" inputmode="search">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="page-hero post-hero page-hero--short">
+  <div class="over-hero-sentinel" aria-hidden="true"></div>
+
+  <picture class="page-hero__bg">
+    <!-- swap with your cover image -->
+    <img src="assets/images/blog.jpeg" alt="">
+  </picture>
+
+  <div class="page-hero__shade"></div>
+
+  <div class="page-hero__content">
+    <p class="post-category">Design Notes</p>
+    <h1 class="page-hero__title">A Calm, Collected Living Room: Layering Neutrals the Right Way</h1>
+    <p class="post-meta">By Studio Team • Aug 12, 2025 • 6 min read</p>
+  </div>
+</section>
+
+<main class="post-main">
+  <article class="post-article">
+
+    <div class="post-intro">
+      <p class="big">
+        We love the kind of living room that feels both relaxed and elevated. This space pairs warm
+        neutrals, tailored upholstery, and collected details to create a timeless foundation that lives beautifully.
+      </p>
+    </div>
+
+    <figure class="post-media">
+      <img src="assets/images/blog-post/Full Services.jpg" alt="">
+      <figcaption>A layered mix of textures keeps neutrals interesting.</figcaption>
+    </figure>
+
+    <h2>Start with a Soft Foundation</h2>
+    <p>
+      A neutral rug and comfortable seating set the tone. Choose shapes that feel classic but not fussy,
+      and let texture do the heavy lifting—linen, wool, and stone are our go-tos for depth without noise.
+    </p>
+
+    <h3>Mix Materials Thoughtfully</h3>
+    <p>
+      A rustic wood coffee table plays nicely with polished metal accents and woven accessories. Limiting
+      the palette but varying the material finishes keeps the room calm while adding dimension.
+    </p>
+
+    <blockquote>
+      “When the palette is quiet, scale and texture become your storytellers.”
+    </blockquote>
+
+    <figure class="post-media">
+      <img src="assets/images/blog-post/Component Services.jpg" alt="">
+      <figcaption>Natural materials + tailored lines = relaxed but elevated.</figcaption>
+    </figure>
+
+    <h2>Balance Old & New</h2>
+    <p>
+      Vintage artwork or a well-patinaed piece gives history to a brand-new room. Pair it with clean
+      silhouettes for a look that feels curated over time.
+    </p>
+
+    <ul>
+      <li>Keep fabrics performance-friendly for real life.</li>
+      <li>Use pairs (lamps, chairs) to bring order to open spaces.</li>
+      <li>Layer lighting: ambient, task, and accent.</li>
+    </ul>
+
+    <hr class="post-rule">
+
+    <!-- Share / tags -->
+    <div class="post-end">
+      <div class="post-tags">
+        <a href="#">Living Room</a>
+        <a href="#">Styling</a>
+        <a href="#">Neutrals</a>
+      </div>
+      <div class="post-share">
+        <span>Share:</span>
+        <a href="#" aria-label="Share on X">X</a>
+        <a href="#" aria-label="Share on Facebook">Facebook</a>
+        <a href="#" aria-label="Share on Pinterest">Pinterest</a>
+      </div>
+    </div>
+
+    <!-- Prev / Next -->
+    <nav class="post-nav">
+      <a class="post-prev" href="#">&larr; The Power of Scale in Small Spaces</a>
+      <a class="post-next" href="#">How We Build a Cozy Bedroom &rarr;</a>
+    </nav>
+  </article>
+
+  <!-- ===== Related ===== -->
+  <section class="related">
+    <div class="related__wrap">
+      <h2 class="related__heading">Related Posts</h2>
+
+      <div class="related__grid">
+        <a class="rel-card" href="#">
+          <div class="rel-img">
+            <img src="assets/images/blog-post/Full Services.jpg" alt="">
+          </div>
+          <div class="rel-body">
+            <p class="rel-cat">Studio</p>
+            <h3 class="rel-title">Five Lighting Rules We Actually Use</h3>
+          </div>
+        </a>
+
+        <a class="rel-card" href="#">
+          <div class="rel-img">
+            <img src="assets/images/blog-post/Component Services.jpg" alt="">
+          </div>
+          <div class="rel-body">
+            <p class="rel-cat">Guide</p>
+            <h3 class="rel-title">Sofa Fabric 101: What to Consider</h3>
+          </div>
+        </a>
+
+        <a class="rel-card" href="#">
+          <div class="rel-img">
+            <img src="assets/images/blog-post/Full Services.jpg" alt="">
+          </div>
+          <div class="rel-body">
+            <p class="rel-cat">Design Notes</p>
+            <h3 class="rel-title">Entryways that Work Hard (and Look Good)</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="assets/js/navbar.js" defer></script>
+</body>
+</html>
